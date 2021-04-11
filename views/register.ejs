@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- <h1>Register Pacient</h1> -->
+    <div class="py-3 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+            alt="some text" width=82>
+    </div>
+    <!-- <hr> -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="pacientname">Pacient Name</label>
+                        <input style="margin-top: 5px;" type="text" name="pacientname" class="form-control"
+                            id="pacientname" placeholder="Enter your pacient name">
+                    </div>
+                    <div class="form-group">
+                        <label for="pacientemail" style="margin-top: 5px;">Pacient E-mail</label>
+                        <input style="margin-top: 5px;" type="email" name="pacientemail" class="form-control"
+                            id="pacientemail" placeholder="Enter your pacient email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="pacientcpf" style="margin-top: 5px;">Pacient CPF</label>
+                        <input style="margin-top: 5px;" type="text" name="pacientcpf" class="form-control cpf"
+                            id="pacientcpf" placeholder="CPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="description" style="margin-top: 5px;">Description</label>
+                        <input style="margin-top: 5px;" type="text" name="description" class="form-control"
+                            id="description" placeholder="Type information about consult">
+                    </div>
+                    <div class="form-group">
+                        <label for="description" style="margin-top: 5px;">Date / Time</label>
+                        <input style="margin-top: 5px;" type="date" name="date" class="form-control" id="date"
+                            placeholder="">
+                        <input style="margin-top: 5px;" type="time" name="time" class="form-control" id="time"
+                            placeholder="">
+                    </div>
+                    <button style="margin-top: 20px;" type="submit" class="btn btn-success">Schedule</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jquery.mask.min.js"></script>
+<script>
+    $('.cpf').mask('00000-000');
+</script>
+</html>
