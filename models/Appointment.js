@@ -1,12 +1,13 @@
 const moongose = require('moongose');
 
-const appointment = new mongose.Schema({
+const appointment = new mongoose.Schema({
     name: String,
     email: String,
     cpf: String,
     description: String,
     date: Date,
-    time: String
+    time: String,
+    finished: Boolean
 });
 
 module.exports = appointment;
